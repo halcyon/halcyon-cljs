@@ -1,17 +1,10 @@
-# Clojure
+# ClojureScript
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/halcyon/clojure.svg)](https://hub.docker.com/r/halcyon/clojure/)
-[![Image Layers](https://images.microbadger.com/badges/image/halcyon/clojure.svg)](https://microbadger.com/images/halcyon/clojure)
+[![Docker Pulls](https://img.shields.io/docker/pulls/halcyon/cljs.svg)](https://hub.docker.com/r/halcyon/cljs/)
+[![Image Layers](https://images.microbadger.com/badges/image/halcyon/cljs.svg)](https://microbadger.com/images/halcyon/cljs)
 
-Non-official Clojure image for [Clojure][1] based on the official openjdk
-[Java Image][2].
+Non-official ClojureScript image for [ClojureScript][1]
 
-## Specific Versions
+[1]: <https://clojurescript.org/>
 
-To run a specific version of Clojure, you can use tags. The following images are
-available:
-
-* halcyon/clojure:1.9.0.391
-
-[1]: <https://clojure.org/>
-[2]: <https://registry.hub.docker.com/u/library/java/>
+Please Note: ClojureScript not included.

@@ -1,4 +1,9 @@
-FROM openjdk:latest
-RUN curl -O https://download.clojure.org/install/linux-install-1.9.0.391.sh
-RUN chmod +x linux-install-1.9.0.391.sh
-RUN ./linux-install-1.9.0.391.sh
+FROM registry.zeddworks.com/clojure:latest
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install -y nodejs chromium
+RUN apt-get -y update && apt-get -y install yarn
+WORKDIR /root
+RUN yarn global add tailwindcss
+RUN yarn global add shadow-cljs
